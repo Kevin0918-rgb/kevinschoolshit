@@ -1,5 +1,9 @@
 @echo off
 
+set "sourceFolder=C:\Users\Student\Desktop\KEVIN WILLIAM\slm\PRINCIP\APUNTES"
+set "destinationFolder=C:\Users\Student\Desktop\KEVIN WILLIAM\slm\PRINCIP\PROGRAM"
+
+
 mkdir PRINCIP
 cd PRINCIP
 mkdir DOCS
@@ -27,4 +31,11 @@ cd ../../../
 cd PRINCIP
 echo Fichero #1 >>fichero1.txt
 echo Fichero #2>>fichero2.txt
+
+xcopy /S /E "%sourceFolder%" "%destinationFolder%"
+
+cd ..
+
+
+
 
